@@ -1,12 +1,13 @@
 # Novel Reader
 
-A smart reading application that helps users understand complex literature by explaining and highlighting pages with difficult meanings, breaking them down for proper understanding.
+A smart Flutter reading application that helps users understand complex literature by explaining and highlighting pages with difficult meanings, breaking them down for proper understanding.
 
 ## Features
 
 - **Intelligent Text Analysis**: Automatically identifies and highlights complex or difficult passages
 - **Detailed Explanations**: Provides breakdowns and explanations of challenging content
 - **Enhanced Reading Experience**: Makes difficult literature more accessible and understandable
+- **Cross-Platform**: Built with Flutter for iOS, Android, and Web
 
 ## Project Description
 
@@ -20,15 +21,34 @@ Novel Reader is designed to assist readers in comprehending complex texts by:
 
 ### Prerequisites
 
-(To be added based on project dependencies)
+- Flutter SDK (latest stable version)
+- Dart SDK (comes with Flutter)
+- Android Studio / Xcode (for mobile development)
+- VS Code or Android Studio (recommended IDEs)
 
 ### Installation
 
-(To be added based on project setup)
+1. Clone the repository:
+```bash
+git clone https://github.com/Eagye/novel_reader.git
+cd novel_reader
+```
 
-### Usage
+2. Install dependencies:
+```bash
+flutter pub get
+```
 
-(To be added based on project functionality)
+3. Run the app:
+```bash
+flutter run
+```
+
+### Building
+
+- **Android**: `flutter build apk` or `flutter build appbundle`
+- **iOS**: `flutter build ios`
+- **Web**: `flutter build web`
 
 ## Contributing
 
