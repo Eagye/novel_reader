@@ -4,6 +4,7 @@ A smart Flutter reading application that helps users understand complex literatu
 
 ## Features
 
+- **EPUB Reader**: Full-featured EPUB viewing with text highlighting, search, and chapter navigation
 - **Intelligent Text Analysis**: Automatically identifies and highlights complex or difficult passages
 - **Detailed Explanations**: Provides breakdowns and explanations of challenging content
 - **Enhanced Reading Experience**: Makes difficult literature more accessible and understandable
@@ -26,6 +27,17 @@ Novel Reader is designed to assist readers in comprehending complex texts by:
 - Android Studio / Xcode (for mobile development)
 - VS Code or Android Studio (recommended IDEs)
 
+### Dependencies
+
+This project uses the following key packages:
+
+- **flutter_epub_viewer**: ^1.2.2 - Full-featured EPUB document viewer with text highlighting, search functionality, chapter listing, and customizable UI
+  - Supports loading EPUBs from files, URLs, or assets
+  - Provides reading progress tracking with CFI (Canonical Fragment Identifier)
+  - Customizable display settings and touch interactions
+
+For complete dependency list, see `pubspec.yaml`.
+
 ### Installation
 
 1. Clone the repository:
@@ -39,7 +51,11 @@ cd novel_reader
 flutter pub get
 ```
 
-3. Run the app:
+3. Platform-specific setup:
+   - **Android**: Cleartext traffic is already enabled in `AndroidManifest.xml` (required for EPUB viewer)
+   - **iOS**: May require additional permissions in `Info.plist` depending on your EPUB source
+
+4. Run the app:
 ```bash
 flutter run
 ```
